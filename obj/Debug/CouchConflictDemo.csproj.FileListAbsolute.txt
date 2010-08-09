@@ -1,0 +1,8 @@
+c:\temp\CouchConflictDemo\bin\CouchConflictDemo.dll
+c:\temp\CouchConflictDemo\bin\CouchConflictDemo.pdb
+c:\temp\CouchConflictDemo\obj\Debug\ResolveAssemblyReference.cache
+c:\temp\CouchConflictDemo\obj\Debug\CouchConflictDemo.dll
+c:\temp\CouchConflictDemo\obj\Debug\CouchConflictDemo.pdb
+c:\temp\CouchConflictDemo\bin\Divan.dll
+c:\temp\CouchConflictDemo\bin\Newtonsoft.Json.dll
+c:\temp\CouchConflictDemo\bin\Divan.pdb
