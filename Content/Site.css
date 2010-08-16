@@ -292,25 +292,21 @@ div#title
 
 .firstDocument
 {
-    position: absolute;
+    float:left;
     width: 400px;
     height: 100%;
 }
 
 .secondDocument
 {
-    margin-left: 520px;
-    position: absolute;
+    float:left;
     width: 400px;
     height: 100%;
 }
 
-.replicationPanel
+.replicate-to-master
 {
-    margin-left: 420px;
-    margin-top: 100px;
-    position: absolute;
-    width: 100px;
+    float:right;
 }
 
 /* Styles for validation helpers

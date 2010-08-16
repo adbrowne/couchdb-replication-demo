@@ -6,3 +6,11 @@ c:\temp\CouchConflictDemo\obj\Debug\CouchConflictDemo.pdb
 c:\temp\CouchConflictDemo\bin\Divan.dll
 c:\temp\CouchConflictDemo\bin\Newtonsoft.Json.dll
 c:\temp\CouchConflictDemo\bin\Divan.pdb
+E:\code\couchdb-replication-demo\bin\CouchConflictDemo.dll
+E:\code\couchdb-replication-demo\bin\CouchConflictDemo.pdb
+E:\code\couchdb-replication-demo\bin\Divan.dll
+E:\code\couchdb-replication-demo\bin\Newtonsoft.Json.dll
+E:\code\couchdb-replication-demo\bin\Divan.pdb
+E:\code\couchdb-replication-demo\obj\Debug\ResolveAssemblyReference.cache
+E:\code\couchdb-replication-demo\obj\Debug\CouchConflictDemo.dll
+E:\code\couchdb-replication-demo\obj\Debug\CouchConflictDemo.pdb

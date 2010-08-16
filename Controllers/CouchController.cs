@@ -13,19 +13,20 @@ namespace CouchConflictDemo.Controllers
         //
         // GET: /Couch/
 
-        static string masterDatabase = "contact_master";
-        static string slaveDatabase = "contact_slave";
+        static string masterDatabase = "meeting_master";
+        static string slaveDatabase = "meeting_slave";
 
-        static string host = "192.168.1.6";
-        static int port = 5918;
+        static string host = "localhost";
+        static int port = 5984;
 
+        static string docId = "2010-AugustMeeting";
         public ActionResult Index()
         {
             var model = new CouchIndexModel();
-            model.MasterDocument = @"{""_id"": ""MyContact""} ";
+            model.MasterDocument = String.Format(@"{{""_id"": ""{0}""}}", docId);
             model.SlaveDocument = string.Empty;
-            model.Database1Name = "contact_master";
-            model.Database2Name = "contact_slave";
+            model.Database1Name = masterDatabase;
+            model.Database2Name = slaveDatabase;
 
             var masterDocument = GetDocument(masterDatabase);
             if (masterDocument != null)
@@ -67,7 +68,7 @@ namespace CouchConflictDemo.Controllers
         private string GetDocument(string dbName)
         {
             var db = GetDatabase(dbName);
-            var doc = db.GetDocument("MyContact");
+            var doc = db.GetDocument(docId);
 
             if (doc != null)
             {
@@ -81,7 +82,7 @@ namespace CouchConflictDemo.Controllers
 
         private string GetDocument(string dbName, string revision)
         {
-            return new CouchRequest(GetDatabase(dbName)).Path("MyContact")
+            return new CouchRequest(GetDatabase(dbName)).Path(docId)
                 .QueryOptions(new Dictionary<string, string> { { "rev", revision } })
                 .Parse().ToString();
         }
